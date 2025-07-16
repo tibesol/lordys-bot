@@ -5,7 +5,8 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
-TOKEN = os.getenv("DISCORD_TOKEN")
+TOKEN = os.environ("DISCORD_TOKEN")
+print("TOKEN USE:" TOKEN[:10]+"MTM5NTAwNzM0MjU0MTUzNzQyMw.GzP48T.OT6t9HSEQjmzxQg24EkenQUjEIlhJZdKLhBgZQ")
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix="!", intents=intents)
 
